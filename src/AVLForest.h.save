@@ -1,9 +1,10 @@
 #ifndef _AVLFOREST_H_
 #define _AVLFOREST_H_
 
-/* include your tree implementation  */
+#include 
 #include <vector>
 #include <string>
+#include <map>
 
 class AVLForest
 {
@@ -12,8 +13,8 @@ class AVLForest
   std::vector<AVLTreeBase*> yourVectorName;
 
   // other data memebers
-  std::map<int id, tree*> m_forestMap;
-  
+  map<string id, tree*> m_forestMap;
+
 public:
   AVLForest();
   ~AVLForest();

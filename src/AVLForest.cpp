@@ -2,6 +2,7 @@
 #include <map>
 #include <string>
 #include <sstream>
+#include <cstdlib>
 
 AVLForest::AVLForest()
 {
@@ -11,13 +12,16 @@ AVLForest::~AVLForest()
 {
 }
 
-void AVLForest::insert(string line)
+void AVLForest::insert(std::string line)
 {
-    getline(std::cin,line);
+    tree *myTree;
+    getline(cin,line);
     istringstream iss(t);
-    string word;
-  if(m_treeMap.find<)/* check if tree not already in vector */
+    std::string id;
+    auto search = ((m_treeMap.find(id));
+  if(search == m_treeMap.end())/* check if tree not already in vector */
   {
+    myTree = new tree();
     // create a new tree and add it to the vector
 
     if(/* character and integer */)
@@ -99,4 +103,5 @@ std::ostream& operator << (std::ostream& out, AVLForest& avlForest)
     }
 
     return out;
+    }
 }

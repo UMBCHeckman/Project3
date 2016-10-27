@@ -15,9 +15,11 @@ void AVLForest::insert(string line)
 {
     getline(std::cin,line);
     istringstream iss(t);
-    string word;
-  if(m_treeMap.find<)/* check if tree not already in vector */
+    string id;
+    auto search = ((m_treeMap.find(id));
+  if(search == m_treeMap.end())/* check if tree not already in vector */
   {
+    id = new tree();
     // create a new tree and add it to the vector
 
     if(/* character and integer */)
