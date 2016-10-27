@@ -37,10 +37,14 @@
 		<Unit filename="src/Driver.cpp" />
 		<Unit filename="src/input1.txt" />
 		<Unit filename="src/input2.txt" />
+		<Unit filename="src/node.cpp" />
+		<Unit filename="src/node.h" />
 		<Unit filename="src/output1.txt" />
 		<Unit filename="src/output2.txt" />
 		<Unit filename="src/range1.txt" />
 		<Unit filename="src/range2.txt" />
+		<Unit filename="src/tree.cpp" />
+		<Unit filename="src/tree.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
