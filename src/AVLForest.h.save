@@ -13,7 +13,7 @@ class AVLForest
 
   // other data memebers
   std::map<int id, tree*> m_forestMap;
-
+  
 public:
   AVLForest();
   ~AVLForest();

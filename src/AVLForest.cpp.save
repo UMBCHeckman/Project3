@@ -1,4 +1,7 @@
 #include "AVLForest.h"
+#include <map>
+#include <string>
+#include <sstream>
 
 AVLForest::AVLForest()
 {
@@ -8,12 +11,15 @@ AVLForest::~AVLForest()
 {
 }
 
-void AVLForest::insert(std::string line)
-{  
-  if(/* check if tree not already in vector */)
+void AVLForest::insert(string line)
+{
+    getline(std::cin,line);
+    istringstream iss(t);
+    string word;
+  if(m_treeMap.find<)/* check if tree not already in vector */
   {
     // create a new tree and add it to the vector
-      
+
     if(/* character and integer */)
     {
       /* static_cast to <YourAVLTreeClassName<char, int>*> if needed */
@@ -41,7 +47,7 @@ void AVLForest::insert(std::string line)
     // we can proceed with insert
 
     // insert data, number pair
-    
+
     if(/* character and integer */)
     {
       /* static_cast to <YourAVLTreeClassName<char, int>*> if needed */
@@ -70,7 +76,7 @@ std::ostream& operator << (std::ostream& out, AVLForest& avlForest)
   // print all trees
   for(/* iterate over vector */)
   {
-      
+
     if(/* character and integer */)
     {
       /* static_cast to <YourAVLTreeClassName<char, int>*> and print */
