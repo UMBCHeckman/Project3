@@ -1,0 +1,15 @@
+#ifndef NODE_H
+#define NODE_H
+
+template <enum dataType, enum numberType>;
+class node
+{
+    public:
+        node();
+        virtual ~node();
+    protected:
+    private:
+        m_
+};
+
+#endif // NODE_H
