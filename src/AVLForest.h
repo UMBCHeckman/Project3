@@ -6,14 +6,16 @@
 #include <string>
 #include <map>
 
+using namespace std;
+
 class AVLForest
 {
   // vector of trees
   // we use a non-templated base class so we can hold all template instantiations
-  std::vector<AVLTreeBase*> yourVectorName;
+  std::vector<AVLTreeBase*> myTrees;
 
   // other data memebers
-  map<string id, tree*> m_forestMap;
+
 
 public:
   AVLForest();
@@ -24,7 +26,10 @@ public:
   friend std::ostream& operator << (std::ostream&, AVLForest&);
 
   // other member functions
-
+private:
+    template <class t1, class t2>
+    map<string, tree*> m_forestMap;
+    //map<string,tree*>::iterator string it;
 };
 
 #endif /* _AVLFOREST_H_ */

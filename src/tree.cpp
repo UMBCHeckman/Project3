@@ -1,5 +1,5 @@
 #include "tree.h"
-template <class t1, t2>;
+template <class t1, class t2>;
 tree<t1,t2>::tree()
 {
 

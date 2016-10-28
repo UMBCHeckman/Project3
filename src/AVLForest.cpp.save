@@ -1,7 +1,11 @@
 #include "AVLForest.h"
 #include <map>
 #include <string>
-#include <sstream>
+#include <stdio.h>
+//#include <sstream>
+//#include <cstdlib>
+#include <iostream>
+
 
 AVLForest::AVLForest()
 {
@@ -11,20 +15,24 @@ AVLForest::~AVLForest()
 {
 }
 
-void AVLForest::insert(string line)
+void AVLForest::insert(std::string line)
 {
-    getline(std::cin,line);
-    istringstream iss(t);
-    string id;
-    auto search = ((m_treeMap.find(id));
-  if(search == m_treeMap.end())/* check if tree not already in vector */
+  vector<string> words;
+  char str[] = line;
+  char * pch;
+  pch = strtok (str,",");
+  while (pch != NULL)
   {
-    id = new tree();
+    words.push_back(pch);
+    pch = strtok (NULL, ",");
+  }
+  if(m_forestMap.find( words[0] ) == m_forestMap.end())/* check if tree not already in vector */
+  {
     // create a new tree and add it to the vector
 
     if(/* character and integer */)
     {
-      /* static_cast to <YourAVLTreeClassName<char, int>*> if needed */
+      static_cast<yourVectorName<char, int>*>/* static_cast to <YourAVLTreeClassName<char, int>*> if needed */
     }
     else if(/* character and float */)
     {
@@ -101,4 +109,5 @@ std::ostream& operator << (std::ostream& out, AVLForest& avlForest)
     }
 
     return out;
+    }
 }
