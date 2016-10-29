@@ -6,7 +6,6 @@
 #include <string>
 #include <map>
 
-using namespace std;
 
 class AVLForest
 {
@@ -27,8 +26,8 @@ public:
 
   // other member functions
 private:
-    template <class t1, class t2>
-    map<string, tree*> m_forestMap;
+    //template <class t1, class t2>
+    std::map<std::string, AVLTreeBase*> m_forestMap;
     //map<string,tree*>::iterator string it;
 };
 

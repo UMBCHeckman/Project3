@@ -1,12 +1,13 @@
 #ifndef NODE_H
 #define NODE_H
 
-template <class t1, t2>;
+template <class t1,class t2>
 class node
 {
     public:
         node(node *myParent);
         virtual ~node();
+        t2 getVal();
     protected:
     private:
         int nodeHeight;

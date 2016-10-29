@@ -2,7 +2,7 @@
 #include <map>
 #include <string>
 #include <stdio.h>
-//#include <sstream>
+#include <sstream>
 //#include <cstdlib>
 #include <iostream>
 
@@ -17,18 +17,25 @@ AVLForest::~AVLForest()
 
 void AVLForest::insert(std::string line)
 {
-  vector<string> words;
-  char str[] = line;
-  char * pch;
-  pch = strtok (str,",");
-  while (pch != NULL)
+  std::vector<std::string> base;
+  std::istringstream ss(line);
+  std::string strLine;
+
+  while(std::getline(ss, strLine, ','))
   {
-    words.push_back(pch);
-    pch = strtok (NULL, ",");
+      base.push_back(strLine)
   }
-  if(m_forestMap.find( words[0] ) == m_forestMap.end())/* check if tree not already in vector */
+    //digest the line into it's components
+  if((m_forestMap.find( strLine[0] )) == m_forestMap.end())/* check if tree not already in vector */
   {
     // create a new tree and add it to the vector
+      AVLTreeBase *myTreeBase = new AVLTreeBase;
+      myTreeBase->PrintOrder(thesecondthing);
+      myTreeBase->DataType(thethirdthing);
+      myTreeBase->NumberType(theforththing);
+      myTrees.push_back(myTreeBase);
+      m_forestMap.insert ( std::pair<string,AVLTreeBase*>(thefirstthing,myTreeBase) );
+      //my tree has been created but not static casted yet
 
     if(/* character and integer */)
     {
@@ -36,7 +43,8 @@ void AVLForest::insert(std::string line)
     }
     else if(/* character and float */)
     {
-      /* static_cast to <YourAVLTreeClassName<char, float>*> if needed */
+    /* static_cast to <YourAVLTreeClassName<char, float>*> if needed */
+
     }
     else if(/* string and integer */)
     {
