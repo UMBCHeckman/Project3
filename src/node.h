@@ -5,6 +5,7 @@ template <class t1,class t2>
 class node
 {
     public:
+        node();
         node(node *myParent);
         virtual ~node();
         t2 getVal();

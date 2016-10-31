@@ -5,9 +5,10 @@ template <class t1,class t2>
 class node
 {
     public:
+        node();
         node(node *myParent);
         virtual ~node();
-        getVal();
+        t2 getVal();
     protected:
     private:
         int nodeHeight;

@@ -5,6 +5,7 @@
 #include <sstream>
 //#include <cstdlib>
 #include <iostream>
+#include <cstdlib>
 
 
 AVLForest::AVLForest()
@@ -14,7 +15,6 @@ AVLForest::AVLForest()
 AVLForest::~AVLForest()
 {
 }
-
 void AVLForest::insert(std::string line)
 {
   std::vector<std::string> base;
@@ -23,22 +23,32 @@ void AVLForest::insert(std::string line)
 
   while(std::getline(ss, strLine, ','))
   {
-      base.push_back(strLine)
+      base.push_back(strLine);
   }
     //digest the line into it's components
-  if((m_forestMap.find( strLine[0] )) == m_forestMap.end())/* check if tree not already in vector */
+  if((m_forestMap.find( base[0] )) == m_forestMap.end())/* check if tree not already in vector */
   {
     // create a new tree and add it to the vector
-      AVLTreeBase *myTreeBase = new AVLTreeBase;
-      myTreeBase->PrintOrder(thesecondthing);
-      myTreeBase->DataType(thethirdthing);
-      myTreeBase->NumberType(theforththing);
+      int temp = atoi(base[1]);
+      AVLTreeBase::PrintOrder tempOrder;
+      tempOrder = static_cast<AVLTreeBase::DataType>(base[1]);
+      AVLTreeBase::DataType tempData;
+      tempData = static_cast<AVLTreeBase::DataType>(base[2]);
+      AVLTreeBase::NumberType tempNumber;
+      tempNumber = static_cast<AVLTreeBase::DataType>(base[3]);
+      //tree *myTreeBase = new tree;
+      myTreeBase->PrintOrder(base[1]);
+      myTreeBase->DataType(base[2]);
+      myTreeBase->NumberType(base[3]);
       myTrees.push_back(myTreeBase);
-      m_forestMap.insert ( std::pair<string,AVLTreeBase*>(thefirstthing,myTreeBase) );
+      m_forestMap.insert ( std::pair<std::string,AVLTreeBase*>(base[0],myTreeBase) );
+      //AVLTreeBase* b = new tree;
       //my tree has been created but not static casted yet
 
-    if(/* character and integer */)
+    if((tempData == 0) && (tempNumber == 0))/* character and integer */
     {
+        //tree *myTreeBase = new tree;
+        static_cast<tree<char, int>*>
       //static_cast<myTrees<char, int>*>/* static_cast to <YourAVLTreeClassName<char, int>*> if needed */
     }
     else if(/* character and float */)

@@ -19,9 +19,8 @@ class tree
     private:
         //std::vector<node*> myTree;
         //template <class t1,class t2>
-        map<t1, t2> m_treeMap;
+        std::map<t1, t2> m_treeMap;
         node<t1,t2> *m_root;
-        node<t1,t2> *tempNode = m_root;
 };
 
 #endif // TREE_H

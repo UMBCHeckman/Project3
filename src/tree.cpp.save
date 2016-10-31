@@ -8,9 +8,15 @@ template <class t1, t2>;
 tree<t1,t2>::~tree()
 {
     //dtor
+
+template <class t1, t2>;
+void tree<t1,t2>insertNode(string dataType, string numType)
+{
+    node<t1,t2> *tempNode = m_root;
+    insertNode(tempNode);
 }
 template <class t1, t2>;
-void tree<t1,t2>insertNode()
+void tree<t1,t2>insertNode(tempNode*%)
 {
     if(myTree.size() == 0){//we need a root
         m_root = new node<t1,t2>;

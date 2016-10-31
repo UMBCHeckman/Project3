@@ -1,5 +1,6 @@
 #include "node.h"
-
+template <class t1, t2>
+node<t1,t2
 template <class t1, t2>
 node<t1,t2>::node(node *myParent)
 {
@@ -15,5 +16,7 @@ node<t1,t2>::~node()
     //dtor
 }
 template <class t1, class t2>
-t2 node<t1, t2>::getVal(){
+t2 node<t1, t2>::getVal()
+{
+    return t2;
 }
