@@ -1,16 +1,18 @@
 #include "tree.h"
-template <class t1, class t2>;
-tree<t1,t2>::tree()
+template <class t1, class t2, class t3>;
+tree<t1,t2>::tree(class t1, class t2, class t3)
 {
-
+    m_printOrder = t1;
+    m_dataType = t2;
+    m_numberType = t3;
 }
-template <class t1, t2>;
+template <class t1, class t2>;
 tree<t1,t2>::~tree()
 {
     //dtor
 
 template <class t1, t2>;
-void tree<t1,t2>insertNode()//string dataType, string numType)
+void tree<t1,t2>insertNode(class t1, class t2)//string dataType, string numType)
 {
     node<t1,t2> *tempNode = m_root;
     insertNode(tempNode);
@@ -55,4 +57,16 @@ setDataType(int temp)
 setNumberType(int temp)
 {
     m_numberType = temp;
+}
+getPrintOrder()
+{
+    return m_printOrder;
+}
+getDataType()
+{
+    return m_dataType;
+}
+getNumberType()
+{
+    return m_numberType;
 }
