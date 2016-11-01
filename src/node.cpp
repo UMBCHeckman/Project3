@@ -1,3 +1,6 @@
+#ifndef NODE_CPP
+#define NODE_CPP
+
 #include "node.h"
 #include <cstddef>
 template <class t1, class t2>
@@ -28,3 +31,4 @@ t2 node<t1, t2>::getVal()
 {
     return m_number;
 }
+#endif

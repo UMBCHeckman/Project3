@@ -31,8 +31,8 @@ class tree: public AVLTreeBase
         std::vector<node<t1,t2>*> m_myTree;
         node<t1,t2> *m_root;
         AVLTreeBase::PrintOrder m_printOrder;
-        //DataType m_dataType;
-        //NumberType m_numberType;
+        AVLTreeBase::DataType m_dataType;
+        AVLTreeBase::NumberType m_numberType;
 };
 
 #endif // TREE_H

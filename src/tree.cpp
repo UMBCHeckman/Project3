@@ -1,3 +1,6 @@
+#ifndef _TREE_CPP
+#define _TREE_CPP
+
 #include "tree.h"
 template <class t1, class t2>// class t3>;
 tree<t1,t2>::tree()//AVLTreeBase::PrintOrder)//class t1, class t2, class t3)
@@ -66,3 +69,4 @@ void tree<t1,t2>::insertNode(node<t1,t2> *tempNode, t1 data, t2 number)
 //{
 //    return m_printOrder;
 //}
+#endif

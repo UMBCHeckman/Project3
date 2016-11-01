@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1478038151 source:c:\users\kithe_000\documents\c++ stuff\project3\project3\project3\src\avlforest.cpp
+1478045013 source:c:\users\kithe_000\documents\c++ stuff\project3\project3\project3\src\avlforest.cpp
 	"AVLForest.h"
+	"tree.h"
 	<map>
 	<string>
 	<stdio.h>
@@ -14,7 +15,7 @@
 	<string>
 	<map>
 
-1478042221 c:\users\kithe_000\documents\c++ stuff\project3\project3\project3\src\tree.h
+1478045302 c:\users\kithe_000\documents\c++ stuff\project3\project3\project3\src\tree.h
 	"AVLTreeBase.h"
 	"node.h"
 	<vector>
@@ -29,10 +30,10 @@
 	"AVLForest.h"
 	<fstream>
 
-1478035653 source:c:\users\kithe_000\documents\c++ stuff\project3\project3\project3\src\node.cpp
+1478042672 source:c:\users\kithe_000\documents\c++ stuff\project3\project3\project3\src\node.cpp
 	"node.h"
 	<cstddef>
 
-1478042210 source:c:\users\kithe_000\documents\c++ stuff\project3\project3\project3\src\tree.cpp
+1478045311 source:c:\users\kithe_000\documents\c++ stuff\project3\project3\project3\src\tree.cpp
 	"tree.h"
 

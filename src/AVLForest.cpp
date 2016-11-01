@@ -1,4 +1,5 @@
 #include "AVLForest.h"
+#include "tree.h"
 #include <map>
 #include <string>
 #include <stdio.h>
