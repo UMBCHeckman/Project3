@@ -1,5 +1,8 @@
+#ifndef _TREE_CPP
+#define _TREE_CPP
+
 #include "tree.h"
-template <class t1, class t2>// class t3>;
+template <typename t1, cla t2>// class t3>;
 tree<t1,t2>::tree()//AVLTreeBase::PrintOrder)//class t1, class t2, class t3)
 {
     //m_printOrder = PrintOrder;
@@ -35,9 +38,9 @@ void tree<t1,t2>::insertNode(node<t1,t2> *tempNode, t1 data, t2 number)
                 insertNode();
             }
         }
-        else if(number < ){
+        else{
             if(tempNode->m_left != NULL){
-                tempNode = tempNode->m_left
+                tempNode = tempNode->m_left;
             }
             else{
                 tempNode = tempNode->m_left;
@@ -46,23 +49,24 @@ void tree<t1,t2>::insertNode(node<t1,t2> *tempNode, t1 data, t2 number)
         }
     }
 }
-template <class t1, class t2>
-void tree<t1,t2>setPrintOrder(int temp)
-{
-    m_printOrder = temp;
-}
-template <class t1, class t2>
-void tree<t1,t2>setDataType(int temp)
-{
-    m_dataType = temp;
-}
-template <class t1, class t2>
-void tree<t1,t2>setNumberType(int temp)
-{
-    m_numberType = temp;
-}
-template <class t1, class t2>
-int tree<t1,t2>getPrintOrder()
-{
-    return m_printOrder;
-}
+//template <class t1, class t2>
+//void setPrintOrder(int temp)
+//{
+//    m_printOrder = temp;
+//}
+//template <class t1, class t2>
+//void tree<t1,t2>setDataType(int temp)
+//{
+//    m_dataType = temp;
+//}
+//template <class t1, class t2>
+//void setNumberType(int temp)
+//{
+//    m_numberType = temp;
+//}
+//template <class t1, class t2>
+//int getPrintOrder()
+//{
+//    return m_printOrder;
+//}
+#endif
