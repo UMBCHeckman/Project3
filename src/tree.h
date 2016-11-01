@@ -12,7 +12,7 @@ template <class t1,class t2>//, class t3>
 class tree: public AVLTreeBase
 {
     public:
-        tree(AVLTreeBase::PrintOrder);//,  t3);
+        tree();//AVLTreeBase::PrintOrder);//,  t3);
         virtual ~tree();
         void insertNode(t1 data, t2 number);//string dataType, string numType);
         void insertNode(node<t1,t2> *tempNode, t1 data, t2 number);
@@ -26,11 +26,10 @@ class tree: public AVLTreeBase
     private:
         //std::vector<node*> myTree;
         //template <class t1,class t2>
-        std::map<t1, t2> m_treeMap;
+        std::map<std::string, node*> m_treeMap;
         node<t1,t2> *m_root;
-        PrintOrder m_printOrder;
-        DataType m_dataType;
-        NumberType m_numberType;
+        AVLTreeBase::PrintOrder m_printOrder;
+        t1 m_dataType;
 };
 
 #endif // TREE_H

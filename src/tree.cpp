@@ -1,26 +1,24 @@
 #include "tree.h"
 template <class t1, class t2>// class t3>;
-tree<t1,t2>::tree(AVLTreeBase::PrintOrder)//class t1, class t2, class t3)
+tree<t1,t2>::tree()//AVLTreeBase::PrintOrder)//class t1, class t2, class t3)
 {
-    m_printOrder = PrintOrder;
-    m_dataType = t1;
-    m_numberType = t2;
+    //m_printOrder = PrintOrder;
 }
 template <class t1, class t2>
 tree<t1,t2>::~tree()
 {
     //dtor
-
+}
 template <class t1, class t2>
-void tree<t1,t2>insertNode(t1 data, t2 number)//string dataType, string numType)
+void tree<t1,t2>::insertNode(t1 data, t2 number)//string dataType, string numType)
 {
     node<t1,t2>() *tempNode = m_root;
     insertNode(tempNode, data, number);
 }
 template <class t1, class t2>
-void tree<t1,t2>insertNode(node<t1,t2> *tempNode, t1 data, t2 number)
+void tree<t1,t2>::insertNode(node<t1,t2> *tempNode, t1 data, t2 number)
 {
-    if(myTree.size() == 0){//we need a root
+    if(m_treeMap.size() == 0){//we need a root
         m_root = new node<t1,t2>;
         m_treeMap.insert ( std::pair<string,node*>(t1,m_root) );
     }
@@ -46,27 +44,23 @@ void tree<t1,t2>insertNode(node<t1,t2> *tempNode, t1 data, t2 number)
         }
     }
 }
-setPrintOrder(int temp)
+template <class t1, class t2>
+void tree<t1,t2>setPrintOrder(int temp)
 {
     m_printOrder = temp;
 }
-setDataType(int temp)
+template <class t1, class t2>
+void tree<t1,t2>setDataType(int temp)
 {
     m_dataType = temp;
 }
-setNumberType(int temp)
+template <class t1, class t2>
+void tree<t1,t2>setNumberType(int temp)
 {
     m_numberType = temp;
 }
-getPrintOrder()
+template <class t1, class t2>
+int tree<t1,t2>getPrintOrder()
 {
     return m_printOrder;
-}
-getDataType()
-{
-    return m_dataType;
-}
-getNumberType()
-{
-    return m_numberType;
 }

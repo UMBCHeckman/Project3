@@ -51,7 +51,7 @@ void AVLForest::insert(std::string line)
         //myTreeBase = static_cast<tree<char, int>*>(myBase);
         //myTreeBase->setPrintOrder(tempOrder); myTreeBase->setDataType(tempData); myTreeBase->setNumberType(tempNumber);
         //This is storage, to put things into the treebase vector it must be a treebase value
-        AVLTreeBase *myTreeBase = new tree<char, int>(tempOrder);
+        AVLTreeBase *myTreeBase = new tree<char, int>;//(tempOrder);
         // This is for retrival. If you wanted to preform tree opperations it happens on myTree
         //tree<char,int> *myTree = static_cast<tree<char,int>*>(myTreeBase);
 
@@ -64,7 +64,7 @@ void AVLForest::insert(std::string line)
     else if((tempData == 0) && (tempNumber == 1))/* character and float */
     {
     /* static_cast to <YourAVLTreeClassName<char, float>*> if needed */
-        AVLTreeBase *myTreeBase = new tree<char, float>(tempOrder);
+        AVLTreeBase *myTreeBase = new tree<char, float>;//(tempOrder);
         // This is for retrival. If you wanted to preform tree opperations it happens on myTree
         //tree<char,int> *myTree = static_cast<tree<char,int>*>(myTreeBase);
 
@@ -76,7 +76,7 @@ void AVLForest::insert(std::string line)
     else if((tempData == 1) && (tempNumber == 0))/* string and integer */
     {
       /* static_cast to <YourAVLTreeClassName<std::string, int>*> if needed */
-        AVLTreeBase *myTreeBase = new tree<std::string, int>(tempOrder);
+        AVLTreeBase *myTreeBase = new tree<std::string, int>;//(tempOrder);
         // This is for retrival. If you wanted to preform tree opperations it happens on myTree
         //tree<char,int> *myTree = static_cast<tree<char,int>*>(myTreeBase);
 
@@ -88,7 +88,7 @@ void AVLForest::insert(std::string line)
     else if((tempData == 0) && (tempNumber == 0))/* string and float */
     {
       /* static_cast to <YourAVLTreeClassName<std::string, float>*> if needed */
-        AVLTreeBase *myTreeBase = new tree<std::string, float>(tempOrder);
+        AVLTreeBase *myTreeBase = new tree<std::string, float>;//(tempOrder);
         // This is for retrival. If you wanted to preform tree opperations it happens on myTree
         //tree<char,int> *myTree = static_cast<tree<char,int>*>(myTreeBase);
 
