@@ -4,6 +4,7 @@
 #include "node.h"
 #include <vector>
 #include <map>
+#include <string>
 
 template <class t1,class t2>
 class node;
@@ -26,10 +27,12 @@ class tree: public AVLTreeBase
     private:
         //std::vector<node*> myTree;
         //template <class t1,class t2>
-        std::map<std::string, node*> m_treeMap;
+        std::map<std::string, int> m_treeMap;
+        std::vector<node<t1,t2>*> m_myTree;
         node<t1,t2> *m_root;
         AVLTreeBase::PrintOrder m_printOrder;
-        t1 m_dataType;
+        //DataType m_dataType;
+        //NumberType m_numberType;
 };
 
 #endif // TREE_H

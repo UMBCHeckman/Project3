@@ -14,11 +14,12 @@
 	<string>
 	<map>
 
-1478038436 c:\users\kithe_000\documents\c++ stuff\project3\project3\project3\src\tree.h
+1478042221 c:\users\kithe_000\documents\c++ stuff\project3\project3\project3\src\tree.h
 	"AVLTreeBase.h"
 	"node.h"
 	<vector>
 	<map>
+	<string>
 
 1477530639 c:\users\kithe_000\documents\c++ stuff\project3\project3\project3\src\avltreebase.h
 
@@ -31,4 +32,7 @@
 1478035653 source:c:\users\kithe_000\documents\c++ stuff\project3\project3\project3\src\node.cpp
 	"node.h"
 	<cstddef>
+
+1478042210 source:c:\users\kithe_000\documents\c++ stuff\project3\project3\project3\src\tree.cpp
+	"tree.h"
 
