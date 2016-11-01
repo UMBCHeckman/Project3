@@ -25,19 +25,4 @@ int main(int argc, char** argv)
   }
 
   // print all trees
-  std::cout<<"\n==============\n";
-  std::cout<<"PRINTING TREES";
-  std::cout<<"\n==============\n";
-  std::cout<<avlForest;
-
-  // print ranges
-  std::cout<<"\n===============\n";
-  std::cout<<"PRINTING RANGES";
-  std::cout<<"\n===============\n";
-  rangeFile.open(argv[2], std::ios::in);
-  
-  while(std::getline(rangeFile, line))
-  {
-    avlForest.print_range(std::cout, line);
-  }
 }

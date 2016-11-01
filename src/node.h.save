@@ -15,6 +15,8 @@ class node
         node *m_left;
         node *m_right;
         node *m_parent;
+        t1 m_data;
+        t2 m_va
 };
 
 #endif // NODE_H

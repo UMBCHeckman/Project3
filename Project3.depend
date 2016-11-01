@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1478032612 source:c:\users\kithe_000\documents\c++ stuff\project3\project3\project3\src\avlforest.cpp
+	"AVLForest.h"
+	<map>
+	<string>
+	<stdio.h>
+	<sstream>
+	<iostream>
+	<cstdlib>
+
+1478023873 c:\users\kithe_000\documents\c++ stuff\project3\project3\project3\src\avlforest.h
+	"tree.h"
+	<vector>
+	<string>
+	<map>
+
+1478035254 c:\users\kithe_000\documents\c++ stuff\project3\project3\project3\src\tree.h
+	"AVLTreeBase.h"
+	"node.h"
+	<vector>
+	<map>
+
+1477530639 c:\users\kithe_000\documents\c++ stuff\project3\project3\project3\src\avltreebase.h
+
+1478035596 c:\users\kithe_000\documents\c++ stuff\project3\project3\project3\src\node.h
+
+1478024246 source:c:\users\kithe_000\documents\c++ stuff\project3\project3\project3\src\driver.cpp
+	"AVLForest.h"
+	<fstream>
+
+1478035653 source:c:\users\kithe_000\documents\c++ stuff\project3\project3\project3\src\node.cpp
+	"node.h"
+	<cstddef>
+

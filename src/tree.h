@@ -14,8 +14,8 @@ class tree: public AVLTreeBase
     public:
         tree(AVLTreeBase::PrintOrder);//,  t3);
         virtual ~tree();
-        void insertNode();//string dataType, string numType);
-        void insertNode(node<t1,t2> *tempNode);
+        void insertNode(t1 data, t2 number);//string dataType, string numType);
+        void insertNode(node<t1,t2> *tempNode, t1 data, t2 number);
         void setPrintOrder(int temp);
         void setDataType(int temp);
         void setNumberType(int temp);

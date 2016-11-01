@@ -11,18 +11,18 @@ tree<t1,t2>::~tree()
 {
     //dtor
 
-template <class t1, t2>
-void tree<t1,t2>insertNode(class t1, class t2)//string dataType, string numType)
+template <class t1, class t2>
+void tree<t1,t2>insertNode(t1 data, t2 number)//string dataType, string numType)
 {
-    node<t1,t2> *tempNode = m_root;
-    insertNode(tempNode);
+    node<t1,t2>() *tempNode = m_root;
+    insertNode(tempNode, data, number);
 }
-template <class t1, t2>
-void tree<t1,t2>insertNode(node<t1,t2> *tempNode)
+template <class t1, class t2>
+void tree<t1,t2>insertNode(node<t1,t2> *tempNode, t1 data, t2 number)
 {
     if(myTree.size() == 0){//we need a root
         m_root = new node<t1,t2>;
-        m_forestMap.insert ( std::pair<string,AVLTreeBase*>(thefirstthing,myTreeBase) );
+        m_treeMap.insert ( std::pair<string,node*>(t1,m_root) );
     }
     else{
         if(t2 > tempNode->getVal())
