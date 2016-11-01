@@ -27,7 +27,7 @@ public:
   // other member functions
 private:
     //template <class t1, class t2>
-    std::map<std::string, int> m_forestMap;
+    std::map<std::string, std::pair<int,int> > m_forestMap;
     //map<string,tree*>::iterator string it;
 };
 

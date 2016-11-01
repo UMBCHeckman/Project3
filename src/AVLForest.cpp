@@ -46,14 +46,14 @@ void AVLForest::insert(std::string line)
 
     if((tempData == 0) && (tempNumber == 0))/* character and integer */
     {
-        //AVLTreeBase *myBase;
-        //m_forestMap.insert(std::pair<std::string, AVLTreeBase*>(base[0], myBase));
         //tree<char, int> *myTreeBase = new tree<char, int>();
         //myBase->PrintOrder = tempOrder; myBase->DataType = tempData; myBase->NumberType = tempNumber;
         //myTreeBase = static_cast<tree<char, int>*>(myBase);
-        AVLTreeBase *myTreeBase = new tree<int, char, int>(tempOrder, tempData, tempNumber);
         //myTreeBase->setPrintOrder(tempOrder); myTreeBase->setDataType(tempData); myTreeBase->setNumberType(tempNumber);
-        myTrees.push_back(myTreeBase);
+        AVLTreeBase *myTreeBase = new tree<char, int>(tempOrder);
+        tree<char,int> *myTree = static_cast<tree<char,int>*>(myTreeBase);
+        myTrees.push_back(myTree);
+        std::pair<int,int> types; types = std::make_pair (tempData,tempNumber);
         m_forestMap.insert(std::pair<std::string, int>(base[0], (myTrees.size()-1)));
       //static_cast<myTrees<char, int>*>/* static_cast to <YourAVLTreeClassName<char, int>*> if needed */
     }
@@ -79,14 +79,16 @@ void AVLForest::insert(std::string line)
   {
     // tree is in vector
     // we can proceed with insert
-    int tempData = myTrees[(m_forestMap.find(base[0])->second)]->getDataType();
-    int tempNumber = myTrees[(m_forestMap.find(base[0])->second)]->getNumberType();
+    //implimentations that don't work because no matter how hard I try you simply cannot add trees to a vector
+    //int tempData = myTrees[(m_forestMap.find(base[0])->second)]->getDataType();
+    //int tempNumber = myTrees[(m_forestMap.find(base[0])->second)]->getNumberType();
     // insert data, number pair
 
-    if((tempData == 0) && (tempNumber == 0))//* character and integer */)
+    if((m_forestMap.find( base[0] )->second.first == 0) && (m_forestMap.find( base[0] )->second.second == 0))//* character and integer */)
     {
       /* static_cast to <YourAVLTreeClassName<char, int>*> if needed */
-      myTrees[(m_forestMap.find(base[0])->second)];
+      tree<char,int> *myTree = static_cast<tree<char,int>*>(myTreeBase);
+      AVLTreeBase *myBase = static_cast
     }
     else if(/* character and float */)
     {

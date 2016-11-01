@@ -1,23 +1,23 @@
 #include "tree.h"
-template <class t1, class t2, class t3>;
-tree<t1,t2>::tree(class t1, class t2, class t3)
+template <class t1, class t2>// class t3>;
+tree<t1,t2>::tree(AVLTreeBase::PrintOrder)//class t1, class t2, class t3)
 {
-    m_printOrder = t1;
-    m_dataType = t2;
-    m_numberType = t3;
+    m_printOrder = PrintOrder;
+    m_dataType = t1;
+    m_numberType = t2;
 }
-template <class t1, class t2>;
+template <class t1, class t2>
 tree<t1,t2>::~tree()
 {
     //dtor
 
-template <class t1, t2>;
+template <class t1, t2>
 void tree<t1,t2>insertNode(class t1, class t2)//string dataType, string numType)
 {
     node<t1,t2> *tempNode = m_root;
     insertNode(tempNode);
 }
-template <class t1, t2>;
+template <class t1, t2>
 void tree<t1,t2>insertNode(node<t1,t2> *tempNode)
 {
     if(myTree.size() == 0){//we need a root

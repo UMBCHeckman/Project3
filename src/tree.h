@@ -8,11 +8,11 @@
 template <class t1,class t2>
 class node;
 
-template <class t1,class t2, class t3>
+template <class t1,class t2>//, class t3>
 class tree: public AVLTreeBase
 {
     public:
-        tree( t1,  t2,  t3);
+        tree(AVLTreeBase::PrintOrder);//,  t3);
         virtual ~tree();
         void insertNode();//string dataType, string numType);
         void insertNode(node<t1,t2> *tempNode);
